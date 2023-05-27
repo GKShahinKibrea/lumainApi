@@ -25,7 +25,7 @@ Tools
 4. Postman
 5. Composer
 
-# third class (Laravel Lumen Tools)
+# Third class (Create And Run New Project)
 Installing Lumen
 * composer create-project --prefer-dist laravel/lumen blog
 
