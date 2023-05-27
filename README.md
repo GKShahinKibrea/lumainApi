@@ -42,6 +42,7 @@ File Structure:
 * routes: Endpoints for the API.
 * .env: Database Connection.
 * web: Main Routing Point
+
 # Five class (Lumen API Basic Routing)
 Methods For Rest API
 
@@ -49,7 +50,7 @@ Methods For Rest API
 * $router->post($url,$callback);
 * $router->put($url,$callback);
 * $router->delete($url,$callback);
-* post, put, delete route only postman
+* post, put, delete route only test postman
 
 $router->get('/get', function () use ($router) {
     return "This is get method";
