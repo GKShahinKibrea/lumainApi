@@ -32,4 +32,15 @@ Installing Lumen
 Project Run
 * php -S localhost:8000 -t public
 
+# Third class (Lumen API File Structure)
+File Structure:
+
+* controllers: our app logics.
+* middlewares: API Security here.
+* migrations: Database schema here.
+* model: Data model here.
+* routes: Endpoints for the API.
+* .env: Database Connection.
+* web: Main Routing Point
+
 
