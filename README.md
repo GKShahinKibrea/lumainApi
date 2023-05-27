@@ -42,5 +42,32 @@ File Structure:
 * routes: Endpoints for the API.
 * .env: Database Connection.
 * web: Main Routing Point
+# Five class (Lumen API Basic Routing)
+Methods For Rest API
+
+* $router->get($url,$callback);
+* $router->post($url,$callback);
+* $router->put($url,$callback);
+* $router->delete($url,$callback);
+
+$router->get('/get', function () use ($router) {
+    return "This is get method";
+});
+
+$router->post('/post', function () use ($router) {
+    return "This is post method";
+});
+
+$router->put('/put', function () use ($router) {
+    return "This is put method";
+});
+
+$router->delete('/delete', function () use ($router) {
+    return "This is delete method";
+});
+
+$router->post('/kibu',function() {
+    return "I am Golam Kibrea";
+});
 
 
