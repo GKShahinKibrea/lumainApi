@@ -17,3 +17,12 @@ What is Laravel lumen
 * Lumen uses rate is higher than other micro services in php
 * silex use per second 1000 , Slim 3 use per second 1800, Lumen use per second 1900
 
+# Second class (Laravel Lumen Tools)
+Tools
+1. VS Code
+2. PhpStrom
+3. Xammp
+4. Postman
+5. Composer
+
+
