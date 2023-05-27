@@ -72,5 +72,43 @@ $router->post('/kibu',function() {
     return "I am Golam Kibrea";
 });
 
+# Six class (Route Prameter)
+Route Parameters
+* Required Parameters
+* Optional Parameters
+
+Required Single Parameters
+---------------------------
+$router->post('/name/{value}',function($value){
+	return $value;
+});
+
+postman post test : http://localhost:8000/name/shahinkibrea
+
+Required Multipule Parameters
+---------------------------
+$router->post('/name/{value}/age/{age}',function($value, $age){
+	return $value.' '.$age;
+});
+
+postman post test : http://localhost:8000/name/shahinkibrea/age/25
+
+$router->post('/{name}/{age}/{city}',function($name, $age, $city){
+	return $name.' '.$age.' '.$city;
+});
+
+postman post test : http://localhost:8000/shahinkibrea/32/Tokyo
+
+Optional Parameters
+---------------------------
+
+$router->post('/{name}/{age}[/{city}]',function($name, $age, $city=null){
+	return $name.' '.$age.' '.$city;
+});
+
+postman post test : http://localhost:8000/shahinkibrea/32
+
+
+
 
 
