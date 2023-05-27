@@ -49,6 +49,7 @@ Methods For Rest API
 * $router->post($url,$callback);
 * $router->put($url,$callback);
 * $router->delete($url,$callback);
+* post, put, delete route only postman
 
 $router->get('/get', function () use ($router) {
     return "This is get method";
@@ -69,5 +70,6 @@ $router->delete('/delete', function () use ($router) {
 $router->post('/kibu',function() {
     return "I am Golam Kibrea";
 });
+
 
 
