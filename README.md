@@ -241,3 +241,14 @@ public function Download(){
 
 $router->get('/Download','MyController@Download');
 
+# Class Fourteen Sending And Catching Request Data
+
+Sending And Catching
+
+Way of Send And Catch:
+* Via URL Parameter
+* Via Header
+* JSON Data Via Body
+
+Send(Mobile/other Device)------------> Catch,Slice (Api)----------> Database
+
