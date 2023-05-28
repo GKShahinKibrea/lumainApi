@@ -211,3 +211,33 @@ Example code :
 
  $router->get('/','MyController@My');
 
+# Class Thirteen (Response Redirect And Download)
+* Response Redirect 
+return redirect()->route('login');
+
+Code Example :
+    public function First(){
+        return redirect('/Second');
+    }
+
+    public function Second(){
+        return "This is Second Method.";
+
+    }
+
+$router->get('/First','MyController@First');
+$router->get('/Second','MyController@Second');
+
+* Response Download
+return response()->download($pathToFile);
+ create file public Folder/ demo.txt
+
+Code Example :
+
+public function Download(){
+        $path = 'Demo.txt';
+        return response()->download($path);
+}
+
+$router->get('/Download','MyController@Download');
+
