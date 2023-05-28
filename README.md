@@ -164,4 +164,22 @@ class MyController extends Controller { <br />
 $router->get('/','MyController@My');  <br/>
 $router->get('/{name}','MyController@Myparameter');  <br/>
 
+# Class TEN (API Response)
+
+Response Area :
+* Body
+* Header
+
+Response Type
+* Simple String 
+* JSON
+* XML
+* Download
+* Redirect
+
+Details of API Response
+* Simple String Response Header And Body
+* Json Response Body From various Types Of Array
+* Redirect Response To Another URI
+* UnderStanding Download Response
 
