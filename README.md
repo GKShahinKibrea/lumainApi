@@ -185,18 +185,16 @@ Details of API Response
 
 # Class Eleven (Simple String Response Header And Body)
 
-* only use String Response Body 
+* only use String Response Body </n>
  return response($content)
-* Both Use String Response Body and Header 
- return response($content)
-        ->header('Content-Typle',$type)
+* Both Use String Response Body and Header  </n>
+ return response($content)  </n>
+        ->header('Content-Typle',$type)  </n>
         ->header('X-Header-One','Header Value');
-* Test Code :
+* Test Code : </n>
     public function Myparameter($name){
         return response($name)
                 ->header('age','28')
                 ->header('city','Tokyo')
-                ->header('admin','user');
-
-    }
+                ->header('admin','user'); }
 
