@@ -145,3 +145,20 @@ We use controller class as callback function in route like 'ControllerClass@Meth
 How Pass Parameter To Controller?  <br />
 $router->get('/{id}','MyCon@My')  <br />
 
+# Laravel Lumen API Controller
+* Controller code : 
+namespace App\Http\Controllers; <br />
+use App\User; <br />
+
+class MyController extends Controller { <br />
+
+    
+    public function My(){ <br />
+        return "This is my Router"; <br />
+    } <br />
+
+    public function Myparameter($name){ <br />
+        return "This is my parameter ".$name; <br />
+    } <br />
+} <br />
+
