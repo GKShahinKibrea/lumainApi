@@ -131,8 +131,8 @@ model class and prepare it for request.
 We can create a controller class by extends it to Controller class in laravel lumen.
 Example Code : 
 
-* <?php
-* namespace App\Http\Controllers;
+ <?php \
+ namespace App\Http\Controllers;\
 * use App\User;
 
 *class MyController extends Controller {
