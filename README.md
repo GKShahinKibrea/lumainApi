@@ -198,3 +198,16 @@ Details of API Response
                 ->header('city','Tokyo')
                 ->header('admin','user'); }
 
+# Class TWELVE JSON Response in Body From Array
+* return response()->json('name'=>'shahinkibrea','age'=>'23'); <br/>
+* only show Body . Dont Show Header.
+
+Example code : 
+
+ public function My(){
+        $myArray = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+        return response()->json($myArray);
+    }
+
+ $router->get('/','MyController@My');
+
