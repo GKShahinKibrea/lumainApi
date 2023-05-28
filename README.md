@@ -151,14 +151,17 @@ namespace App\Http\Controllers; <br />
 use App\User; <br />
 
 class MyController extends Controller { <br />
-
-    
-    public function My(){ <br />
-        return "This is my Router"; <br />
+    public function My(){ 
+        return "This is my Router"; 
     } <br />
 
-    public function Myparameter($name){ <br />
-        return "This is my parameter ".$name; <br />
-    } <br />
+    public function Myparameter($name){ 
+        return "This is my parameter ".$name; 
+    } 
 } <br />
+
+* Route code : 
+$router->get('/','MyController@My');  <br/>
+$router->get('/{name}','MyController@Myparameter');  <br/>
+
 
