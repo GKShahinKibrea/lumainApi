@@ -128,8 +128,8 @@ Controller is a class to organize the logics of http request.Controller gather d
 model class and prepare it for request.
 
 * How to create controller?
-We can create a controller class by extends it to Controller class in laravel lumen.
-Example Code : 
+We can create a controller class by extends it to Controller class in laravel lumen. <br />
+Example Code :  <br />
 
  <?php \
  namespace App\Http\Controllers; \n
