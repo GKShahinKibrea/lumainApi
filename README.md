@@ -145,7 +145,7 @@ We use controller class as callback function in route like 'ControllerClass@Meth
 How Pass Parameter To Controller?  <br />
 $router->get('/{id}','MyCon@My')  <br />
 
-# Laravel Lumen API Controller
+# Class Nine (Laravel Lumen API Controller)
 * Controller code :  <br />
 namespace App\Http\Controllers; <br />
 use App\User; <br />
