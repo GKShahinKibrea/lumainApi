@@ -252,3 +252,33 @@ Way of Send And Catch:
 
 Send(Mobile/other Device)------------> Catch,Slice (Api)----------> Database
 
+# Class Fiften Sending And Catching Request Data
+
+Sending And Catching
+
+Way of Send And Catch:
+* Via URL Parameter -> postman parameter pass key : value 
+* Via Header -> postman Header pass key : value 
+* JSON Data Via Body -. postman Body pass key : value 
+
+Send(Mobile/other Application)------------> Catch,Slice (Api)----------> Database
+
+Example:
+<?php
+namespace App\Http\Controllers;
+use App\User;
+use Illuminate\Http\Request;
+
+class MyController extends Controller {
+    
+    public function Catch(Request $request){
+        when use parameter and Body
+        return $request();
+
+        when use Hader
+        return $request()->header('name');
+    }
+}
+
+$router->get('/Catch','MyController@Catch');
+
