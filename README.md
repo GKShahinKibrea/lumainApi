@@ -183,3 +183,20 @@ Details of API Response
 * Redirect Response To Another URI
 * UnderStanding Download Response
 
+# Class Eleven (Simple String Response Header And Body)
+
+* only use String Response Body 
+ return response($content)
+* Both Use String Response Body and Header 
+ return response($content)
+        ->header('Content-Typle',$type)
+        ->header('X-Header-One','Header Value');
+* Test Code :
+    public function Myparameter($name){
+        return response($name)
+                ->header('age','28')
+                ->header('city','Tokyo')
+                ->header('admin','user');
+
+    }
+
