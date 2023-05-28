@@ -121,5 +121,27 @@ postman post test : http://localhost:8000/shahinkibrea/32
 * Cacheable
 * Uniform interface
 
+# Class Eight (Laravel Lumen API Controller)
 
+* What is controller?
+Controller is a class to organize the logics of http request.Controller gather data from 
+model class and prepare it for request.
+
+* How to create controller?
+We can create a controller class by extends it to Controller class in laravel lumen.
+Example Code : 
+
+<?php
+namespace App\Http\Controllers;
+use App\User;
+
+class MyController extends Controller {
+    
+}
+
+* How to use controller?
+We use controller class as callback function in route like 'ControllerClass@Method'
+
+How Pass Parameter To Controller?
+$router->get('/{id}','MyCon@My')
 
