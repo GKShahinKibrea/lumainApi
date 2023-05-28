@@ -146,14 +146,14 @@ How Pass Parameter To Controller?  <br />
 $router->get('/{id}','MyCon@My')  <br />
 
 # Laravel Lumen API Controller
-* Controller code : 
+* Controller code :  <br />
 namespace App\Http\Controllers; <br />
 use App\User; <br />
 
 class MyController extends Controller { <br />
     public function My(){ 
         return "This is my Router"; 
-    } <br />
+    } 
 
     public function Myparameter($name){ 
         return "This is my parameter ".$name; 
