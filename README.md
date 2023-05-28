@@ -132,8 +132,8 @@ We can create a controller class by extends it to Controller class in laravel lu
 Example Code : 
 
  <?php \
- namespace App\Http\Controllers;\
-* use App\User;
+ namespace App\Http\Controllers; \n
+* use App\User; \n
 
 *class MyController extends Controller {
     
