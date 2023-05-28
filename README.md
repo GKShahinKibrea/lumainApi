@@ -108,7 +108,18 @@ $router->post('/{name}/{age}[/{city}]',function($name, $age, $city=null){
 
 postman post test : http://localhost:8000/shahinkibrea/32
 
+# Class Seven (What is Rest API & History)
 
+* Roy Fielding defined REST in his 2000 phD
+ (Representational State Transfer)
+
+ ## What is Rest Api(Representational State Transfer)
+
+ Client Script <----------  API Script <----------- Database
+* Client-server 
+* Stateless
+* Cacheable
+* Uniform interface
 
 
 
