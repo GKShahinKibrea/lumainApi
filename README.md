@@ -280,7 +280,7 @@ class MyController extends Controller {
     }
 }
 
-$router->get('/Catch','MyController@Catch'); </n>
+* $router->get('/Catch','MyController@Catch'); </n>
 
 # Class 19 (Create New DB And Connect)
 
