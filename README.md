@@ -282,3 +282,24 @@ class MyController extends Controller {
 
 $router->get('/Catch','MyController@Catch');
 
+Class 19 (Create New DB And Connect)
+
+Database Operation 
+1. Database Connection
+2. Select, Insert, Update, Delete
+3. Database Migration
+
+* Create Database
+1. DB Name : details
+2. Table Name : details
+   1. id->primaryKey,AutoIncreament
+   2. name,roll,city,phn,class->varchar(50)
+   3. Demo Data Insert
+
+.env : 
+     DB_CONNECTION=mysql
+	 DB_HOST=127.0.0.1
+	 DB_PORT=3306
+	 DB_DATABASE=students
+	 DB_USERNAME=root
+	 DB_PASSWORD=
