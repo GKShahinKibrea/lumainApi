@@ -263,24 +263,23 @@ Way of Send And Catch:
 
 Send(Mobile/other Application)------------> Catch,Slice (Api)----------> Database
 
-Example:
-<?php
-namespace App\Http\Controllers;
-use App\User;
-use Illuminate\Http\Request;
+Example: </n>
+namespace App\Http\Controllers; </n>
+use App\User; </n>
+use Illuminate\Http\Request; </n>
 
-class MyController extends Controller {
+class MyController extends Controller { </n>
     
-    public function Catch(Request $request){
-        when use parameter and Body
-        return $request();
+    public function Catch(Request $request){ </n>
+        when use parameter and Body </n>
+        return $request(); </n>
 
-        when use Hader
-        return $request()->header('name');
-    }
-}
+        when use Hader </n>
+        return $request()->header('name'); </n>
+    } </n>
+} </n>
 
-* $router->get('/Catch','MyController@Catch'); </n>
+* $router->get('/Catch','MyController@Catch');  </n>
 
 # Class Nineteen (Create New DB And Connect)
 
