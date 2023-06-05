@@ -320,3 +320,25 @@ class DBController extends Controller
  $router->get('','ExampleController@testConnect');
 
  when use DB permission : bootstrap->app>comment out($app->withFacades();
+
+# Class 21 (Basic CURD Select)
+
+Basic CURD REST API
+1. C-create
+2. U-update
+3. R-read
+4. D-delete
+
+namespace App\Http\Controllers;
+use illuminate\support\Facades\DB;
+use illuminate \Http\Request;
+
+class DBController extends Controller
+{
+    function DetailsSelect(Request $request) {
+        $SQL = "SELECT * FROM details";
+        $request = DB::select($SQL);
+    }
+}
+
+$router->get('/delatis','DBController@DetailsSelect');
