@@ -293,7 +293,7 @@ class MyController extends Controller { </n>
 2. Table Name : details
    1. id->primaryKey,AutoIncreament
    2. name,roll,city,phn,class->varchar(50)
-   3. Demo Data Insert
+   3. Demo Data Insert </n>
 
 .env : </n>
      DB_CONNECTION=mysql </n>
