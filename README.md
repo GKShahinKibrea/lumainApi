@@ -302,3 +302,21 @@ class MyController extends Controller { </n>
 	 DB_DATABASE=students </n>
 	 DB_USERNAME=root </n>
 	 DB_PASSWORD= </n>
+
+# Class 20 (Check DB Connection)
+ 
+namespace App\Http\Controllers;
+use illuminate\support\Facades\DB;
+
+class DBController extends Controller
+{
+    function testConnect() {
+        // $dbname = DB::Connection()->getDatabaseName();
+        $dbname = DB::Connection()->select("SELECT * FROM details");
+        return $dbname;
+    }
+}
+
+ $router->get('','ExampleController@testConnect');
+
+ when use DB permission : bootstrap->app>comment out($app->withFacades();
