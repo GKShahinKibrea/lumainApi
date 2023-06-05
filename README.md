@@ -282,7 +282,7 @@ class MyController extends Controller {
 
 * $router->get('/Catch','MyController@Catch'); </n>
 
-# Class 19 (Create New DB And Connect)
+# Class Nineteen (Create New DB And Connect)
 
 ## Database Operation 
 1. Database Connection
