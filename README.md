@@ -342,3 +342,13 @@ class DBController extends Controller
 }
 
 $router->get('/delatis','DBController@DetailsSelect');
+
+# class 25 Laravel Query Builder
+1. Laravel's database query builder provides a convenient,
+fluent interface to creating and running database queries.
+
+2. It can be used to perform most database operations in your 
+application and works on all supported database systems.
+
+3. The Laravel query builder use PDO parameter binding to protect
+your application against SQL injection attacks.
